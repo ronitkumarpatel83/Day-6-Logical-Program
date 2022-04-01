@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Logical_Program_part_1
 {
@@ -16,6 +20,12 @@ namespace Logical_Program_part_1
                 Console.WriteLine("Please choose a number between 1 to 6");
                 Console.WriteLine("1.Fibonacci Series\n2.Perfact Number\n3.Prime Number");
                 Console.WriteLine("4.Reverse Number\n5.Coupon Number\n6.Stop Watch");
+                Console.WriteLine("<<<<<<<<<<<< Logical Program 2 >>>>>>>>>>>>");
+                Console.WriteLine(" Welcome To Logical Program 2");
+                Console.WriteLine("Please choose a number between 7 to 13");
+                Console.WriteLine("7.Vending Machine\n8.Day Of Week\n9.Temperature Conversion");
+                Console.WriteLine("10.Monthly Payment\n11.Square Root\n12.Decimal To Binary");
+                Console.WriteLine("13.Binary to Decimal");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
@@ -50,7 +60,41 @@ namespace Logical_Program_part_1
                         SimulateStopWatch simulateStopWatch = new SimulateStopWatch();
                         simulateStopWatch.StopWatch();
                         break;
-
+                    case 7:
+                        Console.WriteLine("Vending Machine");
+                        VendingMachine vendingMachine = new VendingMachine();
+                        vendingMachine.CountMoney();
+                        break;
+                    case 8:
+                        Console.WriteLine("Day of Week");
+                        DayOfWeek dayOfWeek = new DayOfWeek();
+                        dayOfWeek.Day();
+                        break;
+                    case 9:
+                        Console.WriteLine("Temperature Conversion");
+                        TempratureConversion tempratureConversion = new TempratureConversion();
+                        tempratureConversion.Conversion();
+                        break;
+                    case 10:
+                        Console.WriteLine("Monthly Payment");
+                        MonthlyPayment monthlyPayment = new MonthlyPayment();
+                        monthlyPayment.Payment();
+                        break;
+                    case 11:
+                        Console.WriteLine("Squar Root");
+                        SquareRoot squareRoot = new SquareRoot();
+                        squareRoot.FindSqrt();
+                        break;
+                    case 12:
+                        Console.WriteLine("Decimal to Binary");
+                        DecimalToBinary decimalToBinary = new DecimalToBinary();
+                        decimalToBinary.DToBConversion();
+                        break;
+                    case 13:
+                        Console.WriteLine("Binary to Decimal");
+                        BinaryToDecimal binaryToDecimal = new BinaryToDecimal();
+                        binaryToDecimal.BToDConversion();
+                        break;
                     default:
                         Console.WriteLine("Enter a Valid Number");
                         break;
